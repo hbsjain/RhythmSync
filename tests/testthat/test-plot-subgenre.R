@@ -1,5 +1,4 @@
 test_that("Test plot_subgenre function", {
-
   input_genre <- "nonexistent_genre"
   tryCatch(
     {

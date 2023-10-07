@@ -1,7 +1,6 @@
 test_that("Test cases for polynomial_equation function", {
-
   # Test case 1: Quadratic equation with two real roots
-  expect_error(expect_s3_class(list(1,2,3), "numeric", label = "Argument should be a numeric vector"))
+  expect_error(expect_s3_class(list(1, 2, 3), "numeric", label = "Argument should be a numeric vector"))
 
   # Test case 2: Quadratic equation with two real roots
   expect_error(expect_s3_class(c("1", "-3", "2"), "numeric", label = "Argument should be a numeric vector"))

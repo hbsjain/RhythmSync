@@ -16,7 +16,7 @@
 #'
 #' @examples
 #' # Example 1
-#' quadratic <- c(1,4,4)
+#' quadratic <- c(1, 4, 4)
 #' polynomial_equation(quadratic)
 #'
 #' # Example 2
@@ -36,13 +36,12 @@ polynomial_equation <- function(coefficients) {
   if (!is.numeric(coefficients)) {
     stop("Input coefficients must be a numeric vector")
   }
-  if (coefficients[1]==0) {
+  if (coefficients[1] == 0) {
     stop("First coefficient must be greater than 0")
   }
-  if (length(coefficients) <= 2 | length(coefficients) >= 6 ){
+  if (length(coefficients) <= 2 | length(coefficients) >= 6) {
     print("Coefficients out of range. Enter at least 3 coefficients or less than 7 coefficients")
-  }
-  else{
+  } else {
     if (length(coefficients) == 3) {
       a <- as.numeric(coefficients[1])
       b <- as.numeric(coefficients[2])
@@ -63,6 +62,4 @@ polynomial_equation <- function(coefficients) {
       cat("Complex roots:", roots, "\n")
     }
   }
-
 }
-

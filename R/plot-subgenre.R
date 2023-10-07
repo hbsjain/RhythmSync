@@ -27,16 +27,20 @@ plot_subgenre <- function(input_genre) {
 
   subgenre_counts <- table(filtered_data$playlist_subgenre)
 
-  plot_data <- data.frame(Subgenre = factor(names(subgenre_counts), levels = names(
-    sort(subgenre_counts, decreasing = TRUE)
-  )),
-  Count = as.numeric(subgenre_counts))
+  plot_data <- data.frame(
+    Subgenre = factor(names(subgenre_counts), levels = names(
+      sort(subgenre_counts, decreasing = TRUE)
+    )),
+    Count = as.numeric(subgenre_counts)
+  )
 
   # Create the bar plot
   plot <- ggplot(plot_data, aes(x = Subgenre, y = Count)) +
-    geom_bar(stat = "identity",
-             fill = "#1f77b4",
-             color = "black") +
+    geom_bar(
+      stat = "identity",
+      fill = "#1f77b4",
+      color = "black"
+    ) +
     labs(title = "Distribution of Subgenres", x = "Subgenre", y = "Count") +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
