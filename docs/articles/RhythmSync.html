@@ -69,7 +69,72 @@
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">RhythmSync</span><span class="op">)</span></span></code></pre></div>
-  </main>
+<div class="section level2">
+<h2 id="introduction-to-rhythmsync-package">Introduction to RhythmSync Package<a class="anchor" aria-label="anchor" href="#introduction-to-rhythmsync-package"></a>
+</h2>
+<p>The RhythmSync package provides various functionalities related to
+music data analysis and visualization. It includes functions for
+launching the Rhythms Shiny App, performing polynomial equation
+calculations, and generating bar plots for subgenre distributions. In
+this vignette, we will explore the usage of these functions.</p>
+<div class="section level3">
+<h3 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h3>
+<p>You can install the RhythmSync package from <a href="https://github.com/ETC5523-2023/rpkg-hbsjain" class="external-link">here</a></p>
+</div>
+</div>
+<div class="section level2">
+<h2 id="launching-the-rhythms-app">Launching the Rhythms App<a class="anchor" aria-label="anchor" href="#launching-the-rhythms-app"></a>
+</h2>
+<p>To launch the Rhythms Shiny App, you can use the run_app() function.
+It provides an interactive interface for exploring different aspects of
+music data.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">RhythmSync</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/run_app.html">run_app</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="solving-polynomial-equations">Solving Polynomial Equations<a class="anchor" aria-label="anchor" href="#solving-polynomial-equations"></a>
+</h2>
+<p>The package includes a function called polynomial_equation() that can
+solve polynomial equations, including quadratic equations. It takes a
+vector of coefficients as input and provides information about the
+nature of the roots.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Example 1: Solving a quadratic equation</span></span>
+<span><span class="va">coefficients</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">4</span>, <span class="fl">4</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/polynomial_equation.html">polynomial_equation</a></span><span class="op">(</span><span class="va">coefficients</span><span class="op">)</span></span>
+<span><span class="co">#&gt; One real root: -2</span></span>
+<span></span>
+<span><span class="co"># Example 2: Solving a higher-degree equation</span></span>
+<span><span class="va">coefficients</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="op">-</span><span class="fl">4</span>, <span class="fl">7</span>, <span class="op">-</span><span class="fl">5</span>, <span class="fl">2</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/polynomial_equation.html">polynomial_equation</a></span><span class="op">(</span><span class="va">coefficients</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Complex roots: 0.4238498+0.3070148i 0.4238498-0.3070148i 0.82615-1.069072i 0.82615+1.069072i</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="generating-subgenre-bar-plots">Generating Subgenre Bar Plots<a class="anchor" aria-label="anchor" href="#generating-subgenre-bar-plots"></a>
+</h2>
+<p>The plot_subgenre() function allows you to generate bar plots that
+visualize the distribution of subgenres within a selected genre.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Example: Generate a bar plot for the "rock" genre</span></span>
+<span><span class="fu"><a href="../reference/plot_subgenre.html">plot_subgenre</a></span><span class="op">(</span><span class="st">"rock"</span><span class="op">)</span></span></code></pre></div>
+<p><img src="RhythmSync_files/figure-html/unnamed-chunk-4-1.png" width="700"></p>
+<p>This function is useful for gaining insights into the variety of
+subgenres present in your music data.</p>
+</div>
+<div class="section level2">
+<h2 id="conclusion">Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"></a>
+</h2>
+<p>The RhythmSync package offers a range of tools for music data
+analysis and visualization. Explore the package functions and the
+Rhythms Shiny App to uncover interesting patterns and insights in your
+music data.</p>
+<p>For more details, please refer to the package documentation and help
+files.</p>
+</div>
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 

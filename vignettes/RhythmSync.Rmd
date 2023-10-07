@@ -17,3 +17,52 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(RhythmSync)
 ```
+# Introduction to RhythmSync Package
+
+The RhythmSync package provides various functionalities related to music data analysis and visualization. It includes functions for launching the Rhythms Shiny App, performing polynomial equation calculations, and generating bar plots for subgenre distributions. In this vignette, we will explore the usage of these functions.
+
+## Installation
+
+You can install the RhythmSync package from [here](https://github.com/ETC5523-2023/rpkg-hbsjain)
+
+# Launching the Rhythms App
+
+To launch the Rhythms Shiny App, you can use the run_app() function. It provides an interactive interface for exploring different aspects of music data.
+
+```{r eval=FALSE,echo=TRUE}
+library(RhythmSync)
+run_app()
+```
+
+
+# Solving Polynomial Equations
+
+The package includes a function called polynomial_equation() that can solve polynomial equations, including quadratic equations. It takes a vector of coefficients as input and provides information about the nature of the roots.
+
+```{r}
+# Example 1: Solving a quadratic equation
+coefficients <- c(1, 4, 4)
+polynomial_equation(coefficients)
+
+# Example 2: Solving a higher-degree equation
+coefficients <- c(1, -4, 7, -5, 2)
+polynomial_equation(coefficients)
+```
+
+
+# Generating Subgenre Bar Plots
+
+The plot_subgenre() function allows you to generate bar plots that visualize the distribution of subgenres within a selected genre.
+
+```{r}
+# Example: Generate a bar plot for the "rock" genre
+plot_subgenre("rock")
+```
+
+This function is useful for gaining insights into the variety of subgenres present in your music data.
+
+# Conclusion
+
+The RhythmSync package offers a range of tools for music data analysis and visualization. Explore the package functions and the Rhythms Shiny App to uncover interesting patterns and insights in your music data.
+
+For more details, please refer to the package documentation and help files.
