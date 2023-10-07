@@ -3,8 +3,6 @@
 #'
 #' @format A data frame with 23 variables
 #' \describe{
-#'   \item{words}{A list of praises.}
-#' }#' \describe{
 #'   \item{track_id}{Song unique ID}
 #'   \item{track_name}{Song Name}
 #'   \item{track_artist}{Song Artist}
@@ -29,5 +27,5 @@
 #'   \item{tempo}{The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.}
 #'   \item{duration_ms}{Duration of song in milliseconds}
 #' }
-#' @source \url{https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv}
+#' @source \url{https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/spotify_songs.csv}
 "spotify_songs"

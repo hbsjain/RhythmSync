@@ -1,4 +1,4 @@
-#' Runs the shiny app named Rhythms
+#' Runs the Shiny App named Rhythms
 #'
 #' @description
 #' Rhythms app takes you through a journey exploring different aspects of music.
@@ -10,6 +10,8 @@
 #' Chapter 5: Clustering: Unveiling Hidden Patterns: Helps you visually discern how music tracks are grouped together based on their danceability and energy attributes.
 #'
 #' @return Shiny App launches in a web browser
+#'
+#' @keywords Shiny web application interactive music data visualization
 #'
 #' @export
 run_app <- function() {

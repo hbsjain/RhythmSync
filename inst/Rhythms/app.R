@@ -1,14 +1,8 @@
-
-
+library(RhythmSync)
 library(shiny)
 library(ggplot2)
 library(tidyverse)
 library(shinydashboard)
-
-spotify_songs <-
-  readr::read_csv(
-    'https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv'
-  )
 
 # Define UI for application
 
@@ -400,7 +394,7 @@ server <- function(input, output) {
   })
 
   output$image_output <- renderImage({
-    list(src = "photo.jpg", height = "200px")
+    list(src = "images/photo.jpg", height = "200px")
   }, deleteFile = FALSE)
 
   session_info <- capture.output(sessionInfo())

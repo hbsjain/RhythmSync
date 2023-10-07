@@ -2,7 +2,7 @@
 % Please edit documentation in R/run-app.R
 \name{run_app}
 \alias{run_app}
-\title{Runs the shiny app named Rhythms}
+\title{Runs the Shiny App named Rhythms}
 \usage{
 run_app()
 }
@@ -18,3 +18,10 @@ Chapter 3: Evolution Across Eras: Allows you to witness the evolution of loudnes
 Chapter 4: Playlists: The Curators of Emotion: Provides insights into the curation of music playlists and how they evoke emotional responses.
 Chapter 5: Clustering: Unveiling Hidden Patterns: Helps you visually discern how music tracks are grouped together based on their danceability and energy attributes.
 }
+\keyword{Shiny}
+\keyword{application}
+\keyword{data}
+\keyword{interactive}
+\keyword{music}
+\keyword{visualization}
+\keyword{web}

@@ -7,8 +7,6 @@
 \format{
 A data frame with 23 variables
 \describe{
-\item{words}{A list of praises.}
-}#' \describe{
 \item{track_id}{Song unique ID}
 \item{track_name}{Song Name}
 \item{track_artist}{Song Artist}
@@ -35,7 +33,7 @@ A data frame with 23 variables
 }
 }
 \source{
-\url{https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv}
+\url{https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/spotify_songs.csv}
 }
 \usage{
 spotify_songs
