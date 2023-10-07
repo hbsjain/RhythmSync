@@ -1,14 +1,11 @@
-Package: change-this-to-your-pkg-name
-Title: What the Package Does (One Line, Title Case)
+Package: RhythmSync
+Title: Rhythms App Launcher and Basic Numeric, Plot Functions
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "your@email.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Harsh", "Jain", , "hjai0003@student.monash.edu", role = c("aut", "cre"))
+Description: The 'RhythmSync' is a package which is designed to make it easy to launch the Rhythms app and also provides a clean spotify songs data from TudyTuesdayR. Alongwith the shinyapp, it also provides a function to solve polynomial equations depending on the number of coefficients provided in the input by the user. An additional function that returns a bar graph of the sub-genres arranged by their count for the selected genre.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
-Depends: 
-    R (>= 2.10)
-LazyData: true
